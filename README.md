@@ -34,10 +34,10 @@ This script is a straightforward tool designed to manage your *Darks Souls Remas
 5. Follow the on-screen prompts to either back up or restore your save file:
    - Enter `1` to back up the save file
    - Enter `2` to restore a previously backed-up file
+6. Enter `y` if you are sure you want to copy the save file.
 
 ## Warning
 This script will overwrite your current save file with the backup stored in your home directory. Use it with caution and always verify your actions before proceeding.
 
 # Future improvements
 - Save file renaming: add a feature to rename save files for better organization.
-- Confirmation step: implement a confirmation prompt before overwriting or restoring save files to prevent accidental actions.
