@@ -1,13 +1,13 @@
 # Soulsborne Save Manager
 
-This script is a straightforward tool designed to manage your  *Darks Souls Remastered * and *Dark Souls II: Scholar of the First Sin* save files on Linux. It simplifies the process of backing up and restoring your progress, helping you protect your gameplay and recover saves when needed.
+This script is a straightforward tool designed to manage your *Darks Souls Remastered* and *Dark Souls II: Scholar of the First Sin* save files on Linux. It simplifies the process of backing up and restoring your progress, helping you protect your gameplay and recover saves when needed.
 
 ## Features
 - **Backup Save File:** Easily create a backup of your current save file.
 - **Restore Save File:** Restore your progress from a previously backed-up file.
 - **Automatic Save File Detection:** The script automatically locates your save file in the standard Steam Proton directory.
 - **Backup Location:** Your save file is backed up in your home directory.
-  
+
 ## Prerequisites
 - Operating System: A Linux-based system.
 - Steam Installation: Steam must be installed (non-Flatpak version).
