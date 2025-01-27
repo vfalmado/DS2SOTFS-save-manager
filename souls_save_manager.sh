@@ -1,17 +1,34 @@
 #!/bin/bash
 set -e
 
+# Asking for the game
+
+read -p "Which game are you playing?
+1) Dark Souls Remastered
+2) Dark Souls II: Scholar os the First Sin
+" game
+
+# Setting path variables
+
+if [ "$game" == "1" ]; then
+  SAVE_PATH=$(find "$HOME/.local/share/Steam/steamapps/compatdata/570940/pfx/drive_c/users/steamuser/Documents/NBGI/DARK SOULS REMASTERED" -name "*.sl2")
+  BACKUP_PATH="$HOME/DRAKS0005.sl2"
+
+elif [ "$game" == "2" ]; then
+  SAVE_PATH=$(find "$HOME/.local/share/Steam/steamapps/compatdata/335300/pfx/drive_c/users/steamuser/Application Data/DarkSoulsII" -name "*.sl2")
+  BACKUP_PATH="$HOME/DS2SOFS0000.sl2"
+
+else
+  echo "Error: Invalid option. Please enter 1 (DS1R) or 2 (DS2SOTFS)."
+  exit 1
+fi
+
 # Asking for instructions
 
 read -p "What do you want to do with your save file?
 1) Backup
 2) Restore
 " savefile
-
-# Setting path variables
-
-SAVE_PATH=$(find "$HOME/.local/share/Steam/steamapps/compatdata/335300/pfx/drive_c/users/steamuser/Application Data/DarkSoulsII" -name "*.sl2")
-BACKUP_PATH="$HOME/DS2SOFS0000.sl2"
 
 # Handling the file
 
